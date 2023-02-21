@@ -1,25 +1,23 @@
 {
-  "name": "nestjs",
-  "version": "0.0.0",
-  "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
-  "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
-  },
-  "devDependencies": {
-    "eslint-config-custom": "*",
-    "prettier": "latest",
-    "turbo": "latest"
-  },
-  "engines": {
-    "node": ">=14.0.0"
-  },
-  "dependencies": {},
-  "packageManager": "npm@8.19.2"
+    "name": "@icapps/nestjs",
+    "version": "1.0.0",
+    "private": true,
+    "workspaces": [
+        "packages/*",
+        "shared/*"
+    ],
+    "scripts": {
+        "build": "turbo run build",
+        "test": "turbo run test",
+        "lint": "turbo run lint",
+        "format": "prettier --ignore-path .gitignore --cache --write ."
+    },
+    "devDependencies": {
+        "prettier": "latest",
+        "turbo": "latest"
+    },
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "packageManager": "npm@8.19.2"
 }
