@@ -13,11 +13,7 @@
         "format": "prettier --ignore-path .gitignore --cache --write ."
     },
     "devDependencies": {
-        "prettier": "latest",
-        "turbo": "latest"
-    },
-    "engines": {
-        "node": ">=14.0.0"
-    },
-    "packageManager": "npm@8.19.2"
+        "prettier": "^2.8.4",
+        "turbo": "^1.8.1"
+    }
 }

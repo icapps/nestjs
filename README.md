@@ -4,9 +4,9 @@ A collection of ready-to-use modules and utilities to accelerate building NestJS
 
 ## Contents
 
-| Package               | Description                                                             |
-| --------------------- | ----------------------------------------------------------------------- |
-| @icapps/nestjs-prisma | Everything you need to get started with [Prisma](https://www.prisma.io) |
+| Package                                      | Description                                                             |
+| -------------------------------------------- | ----------------------------------------------------------------------- |
+| [`@icapps/nestjs-prisma`](./packages/prisma) | Everything you need to get started with [Prisma](https://www.prisma.io) |
 
 ## Usage
 
