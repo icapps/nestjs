@@ -3,6 +3,7 @@
     "display": "Build",
     "extends": "./base.json",
     "compilerOptions": {
-        "sourceMap": false
+        "sourceMap": false,
+        "declarationMap": false
     }
 }

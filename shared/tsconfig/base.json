@@ -11,6 +11,8 @@
         "noImplicitAny": true,
         "sourceMap": true,
         "lib": ["es2016"],
-        "experimentalDecorators": true
+        "experimentalDecorators": true,
+        "declaration": true,
+        "declarationMap": true
     }
 }
