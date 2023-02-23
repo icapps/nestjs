@@ -2,6 +2,8 @@
 
 A collection of ready-to-use modules and utilities to accelerate building NestJS applications 🚀
 
+**Take a look at our [getting started](docs/getting_started.md) guide to quickly get started with NestJS**
+
 ## Contents
 
 | Package                                      | Description                                                             |
