@@ -1,7 +1,24 @@
 {
   "name": "@icapps/nestjs-prisma",
   "version": "0.0.2",
+  "description": "Everything you need to get started with Prisma in NestJS",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "nestjs",
+    "prisma"
+  ],
+  "homepage": "https://github.com/icapps/nestjs/tree/main/packages/nestjs-prisma#readme",
+  "bugs": {
+    "url": "https://github.com/icapps/nestjs/issues",
+    "email": "info@icapps.com"
+  },
+  "license": "ISC",
+  "author": "icapps <info@icapps.com> (https://icapps.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/icapps/nestjs.git"
+  },
   "scripts": {
     "dev": "tsc --watch",
     "build": "rimraf dist && tsc --project tsconfig.build.json",
