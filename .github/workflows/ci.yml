@@ -40,7 +40,7 @@ jobs:
       - name: Test
         run: npm run test
 
-      - name: Create release PR
+      - name: Create release PR (if changesets are present)
         uses: changesets/action@v1
         with:
           publish: npm run publish-packages
