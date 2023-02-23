@@ -1,25 +1,25 @@
 {
-    "name": "@icapps/nestjs",
-    "version": "1.0.0",
-    "private": true,
-    "workspaces": [
-        "packages/*",
-        "shared/*",
-        "example"
-    ],
-    "scripts": {
-        "dev": "turbo run --filter='./packages/*' dev",
-        "build": "turbo run --filter='./packages/*' build",
-        "test": "turbo run --filter='./packages/*' test",
-        "lint": "turbo run --filter='./packages/*' lint",
-        "format": "prettier --ignore-path .gitignore --cache --write .",
-        "publish-packages": "turbo run --filter='./packages/*' build test lint && changeset version && changeset publish"
-    },
-    "dependencies": {
-        "@changesets/cli": "^2.26.0"
-    },
-    "devDependencies": {
-        "prettier": "^2.8.4",
-        "turbo": "^1.8.1"
-    }
+  "name": "@icapps/nestjs",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "shared/*",
+    "example"
+  ],
+  "scripts": {
+    "dev": "turbo run --filter='./packages/*' dev",
+    "build": "turbo run --filter='./packages/*' build",
+    "test": "turbo run --filter='./packages/*' test",
+    "lint": "turbo run --filter='./packages/*' lint",
+    "format": "prettier --ignore-path .gitignore --cache --write .",
+    "publish-packages": "turbo run --filter='./packages/*' build test lint && changeset version && changeset publish"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.26.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.4",
+    "turbo": "^1.8.1"
+  }
 }

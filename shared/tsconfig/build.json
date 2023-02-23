@@ -1,9 +1,9 @@
 {
-    "$schema": "https://json.schemastore.org/tsconfig",
-    "display": "Build",
-    "extends": "./base.json",
-    "compilerOptions": {
-        "sourceMap": false,
-        "declarationMap": false
-    }
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Build",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "sourceMap": false,
+    "declarationMap": false
+  }
 }

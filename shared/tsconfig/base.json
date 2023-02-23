@@ -1,18 +1,18 @@
 {
-    "$schema": "https://json.schemastore.org/tsconfig",
-    "display": "Default",
-    "compilerOptions": {
-        "target": "es2016",
-        "module": "commonjs",
-        "esModuleInterop": true,
-        "forceConsistentCasingInFileNames": true,
-        "strict": true,
-        "skipLibCheck": true,
-        "noImplicitAny": true,
-        "sourceMap": true,
-        "lib": ["es2016"],
-        "experimentalDecorators": true,
-        "declaration": true,
-        "declarationMap": true
-    }
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Default",
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "lib": ["es2016"],
+    "experimentalDecorators": true,
+    "declaration": true,
+    "declarationMap": true
+  }
 }
