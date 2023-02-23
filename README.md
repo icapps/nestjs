@@ -27,7 +27,7 @@ We use [changesets](https://github.com/changesets/changesets) to take care of ve
 To publish a new release of any or more packages, all you need to do is run the following command and follow the instructions:
 
 ```bash
-npx changeset
+npm run release
 ```
 
 This will create a changeset that you need to push to GitHub. A release PR will be created, which should publish the package(s) to npm when being merged.
