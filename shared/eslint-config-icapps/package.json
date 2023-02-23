@@ -1,6 +1,7 @@
 {
     "name": "eslint-config-icapps",
     "version": "1.0.0",
+    "private": true,
     "main": "index.js",
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^5.53.0",

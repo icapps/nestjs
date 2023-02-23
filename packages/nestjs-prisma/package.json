@@ -1,9 +1,9 @@
 {
     "name": "@icapps/nestjs-prisma",
-    "version": "1.0.0",
-    "private": true,
+    "version": "0.0.1",
     "main": "dist/index.js",
     "scripts": {
+        "dev": "tsc --watch",
         "build": "rimraf dist && tsc --project tsconfig.build.json",
         "lint": "eslint",
         "test": "jest --passWithNoTests"

@@ -1,41 +1,49 @@
 name: CI
 
 on:
-    push:
-        branches: ['main']
-    pull_request:
-        types: [opened, synchronize]
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-    build-test-lint:
-        name: Build, test and lint
-        timeout-minutes: 15
-        runs-on: ubuntu-latest
+  ci:
+    name: CI
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    env:
+      TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+      TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+      TURBO_REMOTE_ONLY: true
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+
+      - name: Set up Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Test
+        run: npm run test
+
+      - name: Create release PR
+        uses: changesets/action@v1
+        with:
+          publish: npm run publish-packages
         env:
-            TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
-            TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
-            TURBO_REMOTE_ONLY: true
-
-        steps:
-            - name: Check out the repository
-              uses: actions/checkout@v3
-              with:
-                  fetch-depth: 2
-
-            - name: Set up a Node.js environment
-              uses: actions/setup-node@v3
-              with:
-                  node-version: 18
-                  cache: 'npm'
-
-            - name: Install dependencies
-              run: npm install
-
-            - name: Build
-              run: npm run build
-
-            - name: Test
-              run: npm run test
-
-            - name: Lint
-              run: npm run lint
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
