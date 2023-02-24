@@ -32,7 +32,7 @@
   "devDependencies": {
     "@types/jest": "^29.2.6",
     "eslint": "^8.34.0",
-    "eslint-config-icapps": "*",
+    "eslint-config-nestjs": "*",
     "tsconfig": "*",
     "jest": "^29.3.1",
     "rimraf": "^4.1.2",
