@@ -1,6 +1,6 @@
-# @icapps/nestjs-prisma
+# `@icapps/nestjs-prisma`
 
-Everything you need to get started with [Prisma](https://www.prisma.io)
+Everything you need to get started with [Prisma](https://www.prisma.io) in [NestJS](https://nestjs.com)
 
 ## Getting started
 

@@ -1,4 +1,4 @@
-# @icapps/nestjs
+# `@icapps/nestjs`
 
 A collection of ready-to-use modules and utilities to accelerate building NestJS applications 🚀
 
