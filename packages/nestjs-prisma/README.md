@@ -59,6 +59,8 @@ bootstrap();
 ### 6. Import PrismaService to get started
 
 ```js
+// todo.service.ts
+
 import { PrismaService } from '@icapps/nestjs-prisma';
 import { Injectable } from '@nestjs/common';
 
