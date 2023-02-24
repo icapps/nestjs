@@ -22,21 +22,17 @@
   "scripts": {
     "dev": "tsc --watch",
     "build": "rimraf dist && tsc --project tsconfig.build.json",
-    "lint": "eslint",
-    "test": "jest --passWithNoTests"
+    "lint": "eslint"
   },
   "dependencies": {
     "@nestjs/common": "^9.3.8",
     "@prisma/client": "^4.10.1"
   },
   "devDependencies": {
-    "@types/jest": "^29.2.6",
     "eslint": "^8.34.0",
     "eslint-config-nestjs": "*",
-    "tsconfig": "*",
-    "jest": "^29.3.1",
     "rimraf": "^4.1.2",
-    "ts-jest": "^29.0.5",
+    "tsconfig": "*",
     "typescript": "^4.9.4"
   }
 }
