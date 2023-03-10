@@ -1,5 +1,11 @@
 # @icapps/nestjs-prisma
 
+## 0.0.4
+
+### Patch Changes
+
+- 18c9600: Improved documentation and removed unused dependencies
+
 ## 0.0.3
 
 ### Patch Changes
