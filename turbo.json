@@ -8,9 +8,6 @@
     "build": {
       "outputs": ["dist/**"]
     },
-    "packages#build": {
-      "dependsOn": ["^shared#build"]
-    },
     "test": {},
     "lint": {}
   }
