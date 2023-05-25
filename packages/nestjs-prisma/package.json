@@ -1,6 +1,6 @@
 {
   "name": "@icapps/nestjs-prisma",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Everything you need to get started with Prisma in NestJS",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
