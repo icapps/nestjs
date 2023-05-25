@@ -1,0 +1,22 @@
+{
+  "name": "cli",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "rimraf dist && tsc --project tsconfig.build.json",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.34.0",
+    "eslint-config-nestjs": "*",
+    "rimraf": "^4.1.2",
+    "tsconfig": "*",
+    "typescript": "^4.9.4"
+  }
+}

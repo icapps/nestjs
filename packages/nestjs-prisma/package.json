@@ -4,6 +4,9 @@
   "description": "Everything you need to get started with Prisma in NestJS",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "bin": {
+    "icapps-nestjs-prisma": "dist/install.js"
+  },
   "keywords": [
     "nestjs",
     "prisma"
@@ -26,7 +29,8 @@
   },
   "dependencies": {
     "@nestjs/common": "^9.3.8",
-    "@prisma/client": "^4.10.1"
+    "@prisma/client": "^4.10.1",
+    "cli": "*"
   },
   "devDependencies": {
     "eslint": "^8.34.0",

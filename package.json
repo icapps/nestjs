@@ -23,10 +23,10 @@
     "url": "https://github.com/icapps/nestjs.git"
   },
   "scripts": {
-    "dev": "turbo run --filter='./packages/*' dev",
-    "build": "turbo run --filter='./packages/*' build",
-    "test": "turbo run --filter='./packages/*' test",
-    "lint": "turbo run --filter='./packages/*' lint",
+    "dev": "turbo run --filter=!example dev",
+    "build": "turbo run --filter=!example build",
+    "test": "turbo run --filter=!example test",
+    "lint": "turbo run --filter=!example lint",
     "format": "prettier --ignore-path .gitignore --cache --write .",
     "release": "changeset",
     "publish": "turbo run --filter='./packages/*' build test lint && changeset version && changeset publish"

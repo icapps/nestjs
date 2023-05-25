@@ -2,27 +2,37 @@
 
 Everything you need to get started with [Prisma](https://www.prisma.io) in [NestJS](https://nestjs.com)
 
-## Getting started
+## Installation
 
-### 1. Install Prisma CLI as a development dependency
+### Quick installation
+
+```bash
+npx @icapps/nestjs-prisma
+```
+
+### Manual installation
+
+#### 1. Install Prisma CLI as a development dependency
 
 ```bash
 npm install prisma --save-dev
 ```
 
-### 2. Initialize Prisma
+#### 2. Initialize Prisma
 
 ```bash
 npx prisma init
 ```
 
-### 3. Install Prisma Client
+#### 3. Install Prisma Client
 
 ```bash
 npm install @prisma/client
 ```
 
-### 4. Import PrismaModule into your root module
+## Usage
+
+### 1. Import PrismaModule into your root module
 
 ```js
 // app.module.ts
@@ -36,7 +46,7 @@ import { PrismaModule } from '@icapps/nestjs-prisma';
 export class AppModule {}
 ```
 
-### 5. Enable shutdown hooks
+### 2. Enable shutdown hooks
 
 ```js
 // main.ts
@@ -56,7 +66,7 @@ async function bootstrap() {
 bootstrap();
 ```
 
-### 6. Import PrismaService to get started
+### 3. Import PrismaService to get started
 
 ```js
 // todo.service.ts
