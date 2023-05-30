@@ -4,31 +4,32 @@ Everything you need to get started with [Prisma](https://www.prisma.io) in [Nest
 
 ## Installation
 
-### Quick installation
-
 ```bash
 npx @icapps/nestjs-prisma
 ```
 
-### Manual installation
-
-#### 1. Install `@icapps/nestjs-prisma` and Prisma Client
+<details>
+<summary>Manual installation</summary>
+  
+### 1. Install `@icapps/nestjs-prisma` and Prisma Client
 
 ```bash
 npm install @icapps/nestjs-prisma @prisma/client
 ```
 
-#### 2. Install Prisma CLI
+### 2. Install Prisma CLI
 
 ```bash
 npm install prisma --save-dev
 ```
 
-#### 3. Initialize Prisma
+### 3. Initialize Prisma
 
 ```bash
 npx prisma init
 ```
+
+</details>
 
 ## Usage
 
