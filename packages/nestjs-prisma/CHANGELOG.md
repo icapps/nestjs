@@ -1,5 +1,11 @@
 # @icapps/nestjs-prisma
 
+## 1.0.1
+
+### Patch Changes
+
+- 61dfb9d: Fixed quick installation
+
 ## 1.0.0
 
 ### Major Changes
