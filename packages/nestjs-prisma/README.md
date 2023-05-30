@@ -12,22 +12,22 @@ npx @icapps/nestjs-prisma
 
 ### Manual installation
 
-#### 1. Install Prisma CLI as a development dependency
+#### 1. Install `@icapps/nestjs-prisma` and Prisma Client
+
+```bash
+npm install @icapps/nestjs-prisma @prisma/client
+```
+
+#### 2. Install Prisma CLI
 
 ```bash
 npm install prisma --save-dev
 ```
 
-#### 2. Initialize Prisma
+#### 3. Initialize Prisma
 
 ```bash
 npx prisma init
-```
-
-#### 3. Install Prisma Client
-
-```bash
-npm install @prisma/client
 ```
 
 ## Usage

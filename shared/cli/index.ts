@@ -1,15 +1,15 @@
-import * as fs from 'fs';
-import * as childProcess from 'child_process';
-import * as ora from 'ora';
+import { existsSync } from 'fs';
+import { exec } from 'child_process';
+import ora from 'ora';
 
 export function isNodeDir() {
-  if (fs.existsSync('package.json')) return true;
+  if (existsSync('package.json')) return true;
   else return false;
 }
 
 export function run(command: string) {
   return new Promise<string>((resolve, reject) => {
-    childProcess.exec(command, (err, stout, sterr) => {
+    exec(command, (err, stout, sterr) => {
       if (err) {
         reject(sterr);
       } else {

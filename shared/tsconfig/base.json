@@ -10,13 +10,15 @@
     "allowSyntheticDefaultImports": true,
     "target": "es2017",
     "sourceMap": true,
-    "incremental": true,
+    "incremental": false,
     "skipLibCheck": true,
     "strictNullChecks": true,
     "noImplicitAny": true,
     "strictBindCallApply": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "preserveWatchOutput": true
+    "preserveWatchOutput": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true
   }
 }
