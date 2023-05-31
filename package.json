@@ -1,27 +1,12 @@
 {
   "name": "@icapps/nestjs",
   "version": "1.0.0",
-  "description": "A collection of ready-to-use modules and utilities to accelerate building NestJS applications 🚀",
   "private": true,
   "workspaces": [
     "packages/*",
     "shared/*",
     "example"
   ],
-  "keywords": [
-    "nestjs"
-  ],
-  "homepage": "https://github.com/icapps/nestjs#readme",
-  "bugs": {
-    "url": "https://github.com/icapps/nestjs/issues",
-    "email": "info@icapps.com"
-  },
-  "license": "ISC",
-  "author": "icapps <info@icapps.com> (https://icapps.com)",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/icapps/nestjs.git"
-  },
   "scripts": {
     "dev": "turbo run --filter=!example dev",
     "build": "turbo run --filter=!example build",
