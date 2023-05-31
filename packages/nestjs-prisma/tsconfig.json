@@ -1,7 +1,3 @@
 {
-  "extends": "tsconfig/base.json",
-  "compilerOptions": {
-    "outDir": "./dist",
-    "baseUrl": "./"
-  }
+  "extends": "tsconfig/base.json"
 }

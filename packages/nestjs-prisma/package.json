@@ -4,14 +4,12 @@
   "description": "Everything you need to get started with Prisma in NestJS",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "bin": {
-    "icapps-nestjs-prisma": "dist/install.js"
-  },
+  "bin": "dist/install.js",
   "keywords": [
     "nestjs",
     "prisma"
   ],
-  "homepage": "https://github.com/icapps/nestjs/tree/main/packages/nestjs-prisma#readme",
+  "homepage": "https://github.com/icapps/nestjs/blob/main/packages/nestjs-prisma/README.md",
   "bugs": {
     "url": "https://github.com/icapps/nestjs/issues",
     "email": "info@icapps.com"
@@ -20,7 +18,8 @@
   "author": "icapps <info@icapps.com> (https://icapps.com)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/icapps/nestjs.git"
+    "url": "https://github.com/icapps/nestjs.git",
+    "directory": "packages/nestjs-prisma"
   },
   "scripts": {
     "dev": "tsup --watch",
